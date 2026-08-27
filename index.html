@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mading Digital | SMA Muhammadiyah Al Kautsar PK Kartasura</title>
+<style>
+:root{--navy:#06224b;--blue:#126bd6;--green:#25a65a;--yellow:#f5b800;--bg:#f4f7fb;--card:#fff;--text:#132238;--muted:#667085}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+.top{background:#fff;padding:18px 5%;display:flex;align-items:center;gap:28px;box-shadow:0 2px 12px #0001;position:sticky;top:0;z-index:20}
+.logo{height:72px;width:auto}.brand{border-left:1px solid #ccd3dd;padding-left:28px}.brand h1{margin:0;font-size:30px;color:var(--navy)}.brand p{margin:4px 0;color:#5d6572;font-style:italic}
+.search{margin-left:auto;padding:12px 16px;border:1px solid #d5dce5;border-radius:12px;width:300px}
+nav{background:var(--navy);display:flex;justify-content:center;gap:8px;flex-wrap:wrap;padding:0 4%}
+nav a{color:white;text-decoration:none;padding:17px 16px;font-weight:bold;font-size:14px}nav a:hover{background:#0d376f}
+.container{max-width:1400px;margin:18px auto;padding:0 18px}
+.hero{background:linear-gradient(110deg,#06224b,#1167c8);color:white;border-radius:20px;padding:42px;min-height:300px;display:flex;align-items:center;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;width:360px;height:360px;border-radius:50%;right:-100px;top:-120px;background:#ffffff12}
+.hero h2{font-size:42px;margin:0 0 12px;max-width:760px}.hero p{font-size:18px;max-width:680px;line-height:1.6}.btn{display:inline-block;background:#8bd22d;color:#08203e;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:bold}
+.grid3{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:16px;margin-top:16px}.grid2{display:grid;grid-template-columns:2fr 1fr;gap:16px;margin-top:16px}
+.card{background:var(--card);border:1px solid #e1e7ef;border-radius:16px;padding:20px;box-shadow:0 4px 18px #102a4308}.card h3{margin:0 0 16px;color:var(--navy)}
+.item{padding:12px 0;border-bottom:1px solid #e7ebf0}.item:last-child{border:0}.date{color:var(--green);font-weight:bold;font-size:13px}.tag{display:inline-block;background:#eaf3ff;color:#126bd6;padding:5px 9px;border-radius:8px;font-size:12px;font-weight:bold}
+.newsgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.news{border:1px solid #e1e7ef;border-radius:14px;overflow:hidden;background:#fff}.news .pic{height:145px;background:linear-gradient(135deg,#cfe3ff,#8bb7e8);display:flex;align-items:center;justify-content:center;font-size:48px}.news .body{padding:15px}.news h4{margin:9px 0}.muted{color:var(--muted);font-size:14px;line-height:1.5}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.gallery div{height:100px;border-radius:10px;background:linear-gradient(135deg,#d7eaff,#75a7d9);display:flex;align-items:center;justify-content:center;font-size:30px}
+section{scroll-margin-top:140px;margin-top:20px}
+footer{margin-top:28px;background:var(--navy);color:white;text-align:center;padding:28px}.quote{font-style:italic;font-size:18px}
+@media(max-width:900px){.top{flex-wrap:wrap}.search{width:100%;margin-left:0}.grid3,.grid2,.newsgrid{grid-template-columns:1fr}.hero h2{font-size:30px}.brand h1{font-size:22px}.logo{height:58px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <img class="logo" src="images/logo.png" alt="Logo SMA Muhammadiyah Al Kautsar PK Kartasura">
+  <div class="brand"><h1>MADING DIGITAL</h1><p>Kreatif, Inspiratif, dan Berprestasi</p></div>
+  <input class="search" id="search" placeholder="Cari artikel, berita, atau pengumuman..." oninput="cari()">
+</header>
+<nav>
+<a href="#beranda">⌂ BERANDA</a><a href="#berita">▤ BERITA</a><a href="#prestasi">🏆 PRESTASI</a>
+<a href="#karya">🎨 KARYA SISWA</a><a href="#galeri">▧ GALERI</a><a href="#pengumuman">📢 PENGUMUMAN</a>
+<a href="#agenda">▣ AGENDA</a><a href="#tentang">ⓘ TENTANG</a>
+</nav>
+
+<main class="container">
+<section id="beranda" class="hero">
+<div><h2>Selamat Datang di Mading Digital<br><span style="color:#9bea35">SMA Muhammadiyah Al Kautsar PK Kartasura</span></h2>
+<p>Wadah informasi, inspirasi, kreativitas, dan prestasi seluruh warga sekolah.</p>
+<a class="btn" href="#berita">Jelajahi Mading →</a></div>
+</section>
+
+<div class="grid3">
+<section id="pengumuman" class="card"><h3>📢 PENGUMUMAN</h3>
+<div class="item"><b>Informasi Kegiatan Sekolah</b><br><span class="muted">Pantau pengumuman terbaru dari sekolah.</span></div>
+<div class="item"><b>Pendaftaran Kegiatan Siswa</b><br><span class="muted">Segera cek informasi dan jadwal pendaftaran.</span></div>
+<div class="item"><b>Info Akademik</b><br><span class="muted">Pengumuman akademik akan diperbarui di sini.</span></div>
+</section>
+
+<section id="agenda" class="card"><h3>📅 AGENDA</h3>
+<div class="item"><span class="date">05 JUN</span><br><b>Upacara Sekolah</b><br><span class="muted">07.00 WIB</span></div>
+<div class="item"><span class="date">10 JUN</span><br><b>Class Meeting</b><br><span class="muted">08.00 WIB</span></div>
+<div class="item"><span class="date">17 JUN</span><br><b>Rapat Wali Murid</b><br><span class="muted">08.00 WIB</span></div>
+</section>
+
+<section id="prestasi" class="card"><h3>🏆 PRESTASI TERBARU</h3>
+<div class="item">🥇 Juara Olimpiade Sains Tingkat Kabupaten</div>
+<div class="item">🥈 Juara Debat Bahasa Inggris Tingkat Provinsi</div>
+<div class="item">🏅 Juara Lomba Kaligrafi Tingkat Nasional</div>
+</section>
+</div>
+
+<section id="berita" class="card"><h3>📰 BERITA TERBARU</h3>
+<div class="newsgrid" id="news">
+<article class="news"><div class="pic">🏫</div><div class="body"><span class="tag">KEGIATAN</span><h4>Semarak Kegiatan Sekolah</h4><p class="muted">Berbagai kegiatan sekolah berlangsung dengan semangat dan kebersamaan.</p></div></article>
+<article class="news"><div class="pic">🏆</div><div class="body"><span class="tag">PRESTASI</span><h4>Siswa Al Kautsar Raih Prestasi</h4><p class="muted">Selamat kepada para siswa yang telah mengharumkan nama sekolah.</p></div></article>
+<article class="news"><div class="pic">🌙</div><div class="body"><span class="tag">KEGIATAN</span><h4>Kegiatan Keislaman</h4><p class="muted">Kegiatan pembinaan karakter dan keislaman siswa berjalan dengan baik.</p></div></article>
+</div></section>
+
+<div class="grid2">
+<section id="karya" class="card"><h3>🎨 KARYA SISWA</h3>
+<div class="item"><b>Ruang Kreativitas</b><p class="muted">Tempat menampilkan puisi, cerpen, lukisan, fotografi, desain, dan karya digital siswa.</p></div>
+<div class="item"><b>Karya Pilihan Bulan Ini</b><p class="muted">Tambahkan karya siswa terbaik di bagian ini.</p></div>
+</section>
+<section id="galeri" class="card"><h3>📸 GALERI KEGIATAN</h3>
+<div class="gallery"><div>📷</div><div>🎓</div><div>🏃</div><div>👥</div><div>📚</div><div>🎉</div></div>
+</section>
+</div>
+
+<section id="tentang" class="card">
+<h3>🏫 TENTANG MADING DIGITAL</h3>
+<p class="muted">Mading Digital SMA Muhammadiyah Al Kautsar PK Kartasura menjadi media informasi dan kreativitas sekolah yang dapat diakses dengan mudah melalui komputer maupun smartphone.</p>
+</section>
+</main>
+
+<footer><div class="quote">“Bekerjalah kamu, maka Allah, Rasul-Nya dan orang-orang mukmin akan melihat pekerjaanmu itu.”</div>
+<p>QS. At-Taubah: 105</p><small>© 2026 SMA Muhammadiyah Al Kautsar PK Kartasura • Mading Digital</small></footer>
+
+<script>
+function cari(){
+ const q=document.getElementById('search').value.toLowerCase();
+ document.querySelectorAll('.news').forEach(n=>{
+   n.style.display=n.innerText.toLowerCase().includes(q)?'block':'none';
+ });
+}
+</script>
+</body>
+</html>
